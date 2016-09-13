@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace Eliepse\Config;
 
 
 class ConfigFactory
