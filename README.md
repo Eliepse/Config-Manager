@@ -1,2 +1,2 @@
-# Settings-Manager
-Basic setting manager in PHP
+# Config-Manager
+Basic config manager in PHP
