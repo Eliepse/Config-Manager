@@ -33,12 +33,17 @@ class Config
 	}
 
 
-	public function __get($name)
-	{
+	public function get() {
 		if (array_key_exists($name, $this->configs))
 			return $this->configs[ $name ];
 		else
 			throw new \Exception('Configuration not found in ' . $this->name);
+	}
+
+
+	public function __get($name)
+	{
+		return $this->get();
 	}
 
 }
