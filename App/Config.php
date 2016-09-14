@@ -33,7 +33,7 @@ class Config
 	}
 
 
-	public function get() {
+	public function get($name) {
 		if (array_key_exists($name, $this->configs))
 			return $this->configs[ $name ];
 		else
@@ -43,7 +43,7 @@ class Config
 
 	public function __get($name)
 	{
-		return $this->get();
+		return $this->get($name);
 	}
 
 }
