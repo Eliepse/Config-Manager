@@ -21,7 +21,7 @@ class Config
 	public function __construct($filename)
 	{
 		$this->name = $filename;
-		$path = __DIR__ . '/../config/' . $filename . '.php';
+		$path = __DIR__ . '/../../../../config/' . $filename . '.php';
 
 		if (file_exists($path)) {
 			$configs = include $path;
